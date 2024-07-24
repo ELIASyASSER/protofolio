@@ -1,0 +1,227 @@
+/* Global Rules Start */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --dColor:#031540;
+    --sColor:#00abf0;
+}
+body{
+    font-family: "Work Sans",sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.parent{
+    color: #eee;
+
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0 15px ; */
+}
+/* small  */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+    
+}/* medium  */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+    
+}
+/* Large  */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+    
+}
+/* Global Rules End */
+header{
+    background-color: transparent;
+    min-width: 400px;
+    width: 100%;
+    position: fixed;
+    padding: 30px 40px;
+    top: 0;
+    left: 0;
+    display: flex;justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--dColor);
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+
+header nav  {
+    margin-right: 3rem;
+}
+
+
+header nav  a{
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: 0.4s;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+header nav  a:hover{
+    color: var(--sColor);
+}
+.home{
+    height: 100vh;
+    background: linear-gradient(-90deg ,var(--dColor) 76% ,#fff 24%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.img-content{
+    width: 500px;
+    height: 300px;
+    background-color: var(--dColor);
+    outline: 25px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.img-content img{
+    width: 350px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.text-content{
+    text-align: right;
+    color: white;
+    direction: rtl;
+
+}
+.text-content h1{
+    font-size: 40px;
+    text-transform: capitalize;
+
+}
+.text-content h3{
+    font-size: 34px;
+    text-transform: capitalize;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+    background-image: linear-gradient(var(--sColor),#08abec);
+    -webkit-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-position: 40px 0;
+    background-position: -400px 0;
+    animation: fill 6s linear infinite;
+}
+@keyframes fill {
+    0%,96%,100%{
+    background-position: -400px 0;
+        
+    }
+    65%,85%{
+    background-position: 0 0;
+
+    }
+}
+.text-content p{
+    line-height: 1.8;
+    width: 88%;
+    text-transform: capitalize;
+    word-wrap: break-word;
+}
+.socials a{
+    color: var(--sColor);
+    border: 2px solid whitesmoke;
+    display: inline-flex;
+    width: 41px;
+    height: 41px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 20px 0 46px;
+    margin-left: 8px;
+
+}
+.socials a:hover{
+    background-color: var(--sColor);
+    color:#fff;
+    border-color: var(--sColor);
+    box-shadow: 0 0 10px var(--sColor);
+}
+ .btn{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: var(--sColor);
+    padding: 12px 27px;
+    border-radius: 19px;
+    font-size: 21px;
+    letter-spacing: 1.3px;
+    box-shadow:  0 0 10px var(--sColor);
+    transition: 0.4s;
+
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+
+@media (max-width:992px) {
+    .home{
+        flex-direction: column;
+        padding: 100px;
+    background: var(--dColor);
+
+    }
+    .img-content{
+        display: none;
+    }
+    header .logo{
+        color: white;
+    }
+    header{
+        flex-direction: column;
+        background-color: blue;
+        padding: 12px 26px;
+    }
+header .logo{
+    margin-bottom: 20px;
+}    
+header nav  a{
+    padding: 8px 10px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+    header nav{
+        width: 100%;
+        text-align: center;
+
+    }
+.text-content{
+    text-align: center;
+}
+.text-content h1{
+font-size: 32px;
+
+}
+}
