@@ -201,8 +201,7 @@ header nav  a:hover{
     }
     header{
         flex-direction: column;
-        background-color: blue;
-        padding: 12px 26px;
+        padding: 12px 18px;
     }
 header .logo{
     margin-bottom: 20px;
@@ -221,7 +220,7 @@ header nav  a{
     text-align: center;
 }
 .text-content h1{
-font-size: 32px;
+font-size: 27px;
 
 }
 }
